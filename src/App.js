@@ -1,10 +1,15 @@
 import './App.css';
+import Header from './components/Header.tsx';
+import Hero from './components/Hero.tsx';
+import Search from './components/Search.tsx';
 
 function App() {
   return (
-    <header className="flex flex-row basis-0 justify-center hover:basis-1/2">
-      <h1 className="text-3xl font-bold underline m-4">Hello world!</h1>
-    </header>
+    <div aria-label="app" className="bg-black min-h-screen min-w-screen md:min-h-screen">
+      <Header />
+      <Hero />
+      <Search />
+    </div>
   );
 }
 
