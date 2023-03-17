@@ -1,14 +1,22 @@
 import './App.css';
 import Header from './components/Header.tsx';
 import Hero from './components/Hero.tsx';
-import Search from './components/Search.tsx';
+
+import Footer from './components/Footer.tsx';
+import ResultList from './components/ResultList';
 
 function App() {
+
+
   return (
-    <div aria-label="app" className="bg-black min-h-screen min-w-screen md:min-h-screen">
+    <div
+      aria-label="app"
+      className="flex flex-col bg-black h-screen w-screen justify-between"
+    >
       <Header />
       <Hero />
-      <Search />
+      <ResultList />
+      <Footer />
     </div>
   );
 }
