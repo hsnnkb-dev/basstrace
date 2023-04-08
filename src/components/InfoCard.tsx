@@ -4,6 +4,9 @@ type cardProps = {
   title: string,
   duration: number,
   link: string
+  artist: string
+  cover: string,
+  preview: string
 }
 
 function InfoCard( mediaInfo : cardProps): {} {
